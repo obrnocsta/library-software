@@ -17,14 +17,16 @@ const collection = [];
 
 function addBookToCollection(title, author, yearPublished, libraryData) {
   // Explicitly check for title
-  if (title === undefined || title === null || title === "") {
-    title = "Unknown Title";
-  }
+  //   if (title === undefined || title === null || title === "") {
+  //     title = "Unknown Title";
+  //   }
+  title = title || "Unknown Title";
 
   // Explicitly check for author
-  if (author === undefined || author === null || author === "") {
-    author = "Unknown Author";
-  }
+  //   if (author === undefined || author === null || author === "") {
+  //     author = "Unknown Author";
+  //   }
+  author = author || "Unknow Author";
 
   // Explicitly check if yearPublished is undefined or null
   if (yearPublished === undefined || yearPublished === null) {
