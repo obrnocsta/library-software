@@ -35,14 +35,16 @@ function addBookToCollection(title, author, yearPublished, libraryData) {
   yearPublished = yearPublished ?? "Not Specified";
 
   // Explicitly check for availability at main library
-  let availability = "Not Available"; // Default value
-  if (libraryData) {
-    if (libraryData.locations) {
-      if (libraryData.locations.mainLibrary) {
-        availability = "Available";
-      }
-    }
-  }
+  //   let availability = "Not Available"; // Default value
+  //   if (libraryData) {
+  //     if (libraryData.locations) {
+  //       if (libraryData.locations.mainLibrary) {
+  //         availability = "Available";
+  //       }
+  //     }
+  //   }
+  const availability =
+    (libraryData?.locations?.mainLibrary && "Available") || "Not Available";
 
   // Push the book object to 'collection'
   collection.push({
