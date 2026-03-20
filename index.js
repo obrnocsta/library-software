@@ -29,9 +29,10 @@ function addBookToCollection(title, author, yearPublished, libraryData) {
   author = author || "Unknow Author";
 
   // Explicitly check if yearPublished is undefined or null
-  if (yearPublished === undefined || yearPublished === null) {
-    yearPublished = "Not Specified";
-  }
+  //   if (yearPublished === undefined || yearPublished === null) {
+  //     yearPublished = "Not Specified";
+  //   }
+  yearPublished = yearPublished ?? "Not Specified";
 
   // Explicitly check for availability at main library
   let availability = "Not Available"; // Default value
