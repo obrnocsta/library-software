@@ -1,13 +1,6 @@
-# Getting Started
+# Refactor the Library System Code
 
-Install the dependencies and run the project
-
-```
-npm install
-npm start
-```
-
-Head over to https://vitejs.dev/ to learn more about configuring vite
+You are working with a piece of code that handles information about books in a library system. The current code is functional but can be improved to be more concise and efficient by using short-circuiting, nullish coalescing, and Optional Chaining.
 
 ## About Scrimba
 
